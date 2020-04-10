@@ -1,0 +1,94 @@
+
+.nav{
+    background-color:#71c38e  ! important;
+}
+.steps{
+  text-align: center;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 37%;
+
+}
+.cr{
+  height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+.in{
+  font-weight: bold;
+    margin-left: 20px;
+}
+.cnt {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cnt input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.chk {
+  position: absolute;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.cnt:hover input ~ .chk {
+  background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.cnt input:checked ~ .chk {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.chk:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.cnt input:checked ~ .chk:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.cnt .chk:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+#hoho{
+  float:right;
+}
+.one{
+  width: 900px;
+    position: relative;
+    right: 5%;
+}
